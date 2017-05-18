@@ -25,8 +25,12 @@
         </action>
         <action path="/product"
                 type="com.prakash.actions.ProductAction"
-                name="productForm">
+                name="productForm"
+                parameter="execute">
             <forward name="success" path="/product.jsp"/>
+            <forward name="add" path="/addProduct.jsp"/>
+            <forward name="delete" path="/deleteProduct.jsp"/>
+            <forward name="update" path="/updateProduct.jsp"/>
         </action>
         <action path="/customer"
                 type="com.prakash.actions.CustomerAction"
