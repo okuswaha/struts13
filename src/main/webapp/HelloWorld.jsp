@@ -4,6 +4,9 @@
     <title>Hello World</title>
 </head>
 <body>
-<h1>Hello World</h1>
+<h1>Hi There !!</h1>
+<div>
+    <p><bean:write name="helloWorldForm" property="message"/> </p>
+</div>
 </body>
 </html>

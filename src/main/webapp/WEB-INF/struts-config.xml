@@ -7,7 +7,14 @@
 
     <form-beans>
         <form-bean name="helloWorldForm"
-                   type="com.prakash.forms.HelloWorldForm"/>
+                   type="com.prakash.forms.HelloWorldForm">
+        </form-bean>
+        <form-bean name="productForm"
+                   type="com.prakash.forms.ProductForm">
+        </form-bean>
+        <form-bean name="customerForm"
+                   type="com.prakash.forms.CustomerForm">
+        </form-bean>
     </form-beans>
 
     <action-mappings>
@@ -15,8 +22,18 @@
                 type="com.prakash.actions.HelloWorldAction"
                 name="helloWorldForm">
             <forward name="success" path="/HelloWorld.jsp"/>
-
         </action>
+        <action path="/product"
+                type="com.prakash.actions.ProductAction"
+                name="productForm">
+            <forward name="success" path="/product.jsp"/>
+        </action>
+        <action path="/customer"
+                type="com.prakash.actions.CustomerAction"
+                name="customerForm">
+            <forward name="success" path="/customer.jsp"/>
+        </action>
+
     </action-mappings>
 
 </struts-config>

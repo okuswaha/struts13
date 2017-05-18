@@ -6,7 +6,7 @@ import org.apache.struts.action.ActionForm;
  * Created by okuswaha on 5/17/2017.
  */
 public class HelloWorldForm extends ActionForm{
-    String message;
+    private String message;
 
     public String getMessage() {
         return message;
